@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf8">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title> page test </title>
+    </head>
+
+    <body>
+        <header>
+            <div class="en-tete">
+            <img src="images/demmove-logo-200.png" alt="logo"/>
+            
+            <div class="titre">
+            <h1> Déménagement </h1>
+            <h3> International et national</h3>
+            <h2> GARDE MEUBLE ET TRANSIT</h2>
+            </div>
+
+            <button id="LienDevis"> Devis Gratuit</button>
+            <button id="Numero"> 01 60 86 22 13</button>
+            </div>
+
+            <div class="Menu">
+                <div class="menu" >
+                    <a href="#" class="active">DEM&<br>MOVE</a>
+                    <a href="#">ENTREPRISE<br>DEMENAGEMENT</a>
+                    <a href="#">TOUTE NOS<br>PRESTATIONS</a>
+                    <a href="#">FORMULE<br>DEMENAGEMENT</a>
+                    <a href="#">CONTACT<br>DEM&MOVE</a>
+                    <a href="#">DEVIS<br>DEMENAGEMENT</a>
+                </div> 
+
+                <div class ="texte">
+                    attestataire de capacité<br>commissionnaire de transports<br>transitaire
+                </div>
+            </div>
+        </header>
+
+        <div class="carrousel-images">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+            
+                <div class="slide first">
+                    <img src="images/demmove-bg3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/demmove-bg3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/demmove-bg3.jpg" alt="">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+        </div>
+    
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+            counter = 1;
+            }
+        }, 5000);
+        </script>
+
+        <p>Entreprise de déménagement DEM&MOVE</p>
+
+        <div class="centre">
+            <div class="sidebar">
+                <div class="redirection">          
+                    <a href="#">Démenage International</a>
+                    <a href="#">Démenagment France</a>
+                    <a href="#">Déménagement Maroc</a>
+                    <a href="#">Grand-Meuble</a>
+                    <a href="#">Transit</a>
+                    <a href="#">Entreprise de Déménagement</a>
+                </div>
+                <h2> Contact</h2>
+                <p> 35 Rue paul Claudel</p>
+                <p> 91000 Evry</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.5647251437326!2d2.4293510158698544!3d48.637310924201145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5de23e97b86d9%3A0xbc55928b05ea68b2!2s36%20Rue%20Paul%20Claudel%2C%2091000%20%C3%89vry-Courcouronnes!5e0!3m2!1sfr!2sfr!4v1670602917590!5m2!1sfr!2sfr" 
+                width="250" height="250" style="border: 3px;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <p>Du lundi au vendredi de 8h30 a 12h00 et <br> de 14h00 a 17h30:</p>
+                <br>
+                <i class='bx bxs-phone'> 01 60 86 22 13 / 07 48 35 46 </i>
+                <br><br>
+                <i class='bx bxs-envelope'><a href="#">contact@dem-and-move.com</a></i>  
+            </div>
+
+            <div class="main">
+                <div class="section">
+                    <article class="article">
+                        <i class='bx bx-world'></i>
+                        <br>
+                        <span>Déménagment</span>
+                        <p>20 années d'expérience dans la prestation du déménagement national et International.</p>
+                    </article>
+                    <article class="article">
+                        <i class='bx bxs-briefcase-alt-2'></i>
+                        <br>
+                        <span>Garde-Meuble</span>
+                        <p>Une offre garde-meuble flexible pour offrir une réponse rapide a vos différents besoins</p>
+                    </article>
+                    <article class="article">
+                        <i class='bx bxs-truck'></i>
+                        <br>
+                        <span>Transit</span>
+                        <p>Entreprise de déménagement transitaire : nous gérons aussis les démarches administrative</p>
+                    </article>
+                </div>
+
+                <section>
+                    <h4> Démenagement International et Nationaux </h4>
+                    <p>
+                        Notre entreprise de Démenagment met a votre disposition des prestations globales et complémentaires afin de programmer des 
+                        <a href="#">déménagement nationaux</a> des <a href="#">déménagement internationaux</a> de grandes distances nécessitant plusieurs modes de transport.
+                    </p>
+                </section>
+
+                <div class="galerie">
+                    <img id="img-galerie" src="images/camion.jpg" alt="camion"/>
+                    <img id="img-galerie" src="images/cargo.jpg" alt="cargo"/>
+                    <img id="img-galerie"src="images/avion.jpg" alt="avion" />
+                    <img id="img-galerie"src="images/train.jpg" alt="train"/>
+                </div>
+
+                <section>
+                    <h4> Déménagement International</h4>
+                    <p>
+                        Vous êtes sur le point de vous expatrier, ou d’effectuer une mission à l’étranger : nos équipes sont donc en capacité, 
+                        d’une part de prendre en charge vos affaires en les stockant dans des garde-meubles sécurisés, et d’autre part, de programmer leur transit.
+                    </p>
+                    <br>
+                    <p>
+                        Nous nous rendons sur les lieux du déménagement afin de faire un état des lieux et de mesurer le volume des affaires à transporter.
+                    </p>
+                    <span> Sous 48 heures, le client recoit un <a href="#">devis de déménagement</a> personalisé en fonction de ses attentes et de son budget</span>
+                     <h4> Déménagment national </h4>
+                     <p>Avec plus d’une vingtaine d’années d’expérience à notre actif, nous avons su développer une expertise, 
+                        à partir de notre zone d’intervention de prédilection sur Paris et L’Ile-de-France puisque nous sommes basés à Lisses.
+                        Nous prenons également en compte l’aspect environnemental en optimisant la logistique afin de favoriser le respect de l’environnement, 
+                        tandis que des contrôles réguliers sont effectués afin d’analyser et de réduire les émissions de dioxyde de carbone et autres particules. 
+                        Adressez-vous à <a href="#"> l'entreprise  de déménagement</a> DEM&MOVE pour un déménagment sur et organisé.
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <div class="foot">
+            <p> Vous désirer connaitre le détail de nos tarifs qui concerne le déménagement national ou à l'internaltionnal, ou nos prestations garde meuble et Transit ?</p>
+            <button class="button">Devis Déménagment</button>
+        </div>
+
+        <br>
+    </body>
+
+    <footer>
+        <div class="footer">
+            <h2>DEM&MOVE</h2>
+            <a href="#">Entreprise</a>
+            <a href="#">Services</a>
+            <a href="#">Déménagement MAroc</a>
+        </div>
+
+        <div class="footer">
+            <h2>Informations</h2>
+            <a href="#">Devis</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="footer">
+            <h2>Où sommes-nous ?</h2>
+            <span>DEM&MOVE</span>
+            <p> 36 rue Paul Claudel</p>
+            <p> 91000 Evry</p>
+            <i class='bx bxs-map'><a href="#">Localisation</a></i>
+        </div>
+        <div class="footer">
+            <h2>Nous contacter</h2>
+            <span>Horaires d'ouverture</span>
+            <p>Du lundi au vendredi de 8h30 a 12h00 et <br> de 14h00 a 17h30:</p>
+            <i class='bx bxs-phone'> 01 60 86 22 13 / 07 48 35 46 </i>
+        </div>
+        
+    </footer>
+
+</html>
