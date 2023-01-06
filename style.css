@@ -286,6 +286,23 @@ min-width: 1200px;
   background: #40D3DC;
 }
 
+@media screen and (max-width: 1700px){
+  .slider{
+    height: 500px;
+  }
+  .slide{
+    height: 500px;
+  }
+  .slide img{
+    height: 500px;
+  }
+  .navigation-auto{
+    margin-top: 450px;
+  }
+  .navigation-manual{
+    margin-top: -350px;
+  }
+}
 
 /*---------------------------------------------- CENTRE -------------------------------------------------*/
 
