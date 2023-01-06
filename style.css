@@ -184,6 +184,7 @@ header
   align-items: center;
   background: paleturquoise;
   clear: both;
+  border-radius: 10px;
 }
 
 .slider{
