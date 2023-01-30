@@ -2,74 +2,94 @@
 <html lang="fr">
     <head>
         <meta charset="utf8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title> page test </title>
     </head>
-
+   
     <body>
         <header>
             <div class="en-tete">
-            <img src="images/demmove-logo-200.png" alt="logo"/>
+                <img src="images/demmove-logo-200.png" alt="logo"/>
             
-            <div class="titre">
-            <h1> Déménagement </h1>
-            <h3> International et national</h3>
-            <h2> GARDE MEUBLE ET TRANSIT</h2>
-            </div>
-
-            <button id="LienDevis"> Devis Gratuit</button>
-            <button id="Numero"> 01 60 86 22 13</button>
-            </div>
-
-            <div class="Menu">
-                <div class="menu" >
-                    <a href="#" class="active">DEM&<br>MOVE</a>
-                    <a href="#">ENTREPRISE<br>DEMENAGEMENT</a>
-                    <a href="#">TOUTE NOS<br>PRESTATIONS</a>
-                    <a href="#">FORMULE<br>DEMENAGEMENT</a>
-                    <a href="#">CONTACT<br>DEM&MOVE</a>
-                    <a href="#">DEVIS<br>DEMENAGEMENT</a>
-                </div> 
-
-                <div class ="texte">
-                    attestataire de capacité<br>commissionnaire de transports<br>transitaire
+                <div class="titre">
+                    <h1> Déménagement </h1>
+                    <h2> International et national</h2>
+                    <h3> GARDE-MEUBLE ET TRANSIT</h3>
                 </div>
+
+                <button id="LienDevis"> Devis Gratuit</button>
+                <button id="Numero"> 01 60 86 22 13</button>
             </div>
         </header>
-
-        <div class="carrousel-images">
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-            
-                <div class="slide first">
-                    <img src="images/demmove-bg3.jpg" alt="">
+        <br>
+        <div class="Menu-et-Slider">
+            <div class="Menu">
+                <div class="menu" >
+                    <div class="active">    
+                        <p><a href="#">DEM&<br>MOVE</a></p>
+                    </div>
+                    <div class="lien-menu">
+                        <p><a href="#">ENTREPRISE<br>DEMENAGEMENT</a></p>
+                    </div>
+                    <div class="lien-menu">
+                        <p><a href="#">TOUTE NOS<br>PRESTATIONS</a></p>
+                    </div> 
+                    <div class="lien-menu">
+                        <p><a href="#">FORMULE<br>DEMENAGEMENT</a></p>
+                    </div>
+                    <div class="lien-menu">
+                        <p><a href="#">CONTACT<br>DEM&MOVE</a></p>
+                    </div>
+                    <div class="lien-menu">
+                        <p><a href="#">DEVIS<br>DEMENAGEMENT</a></p>
+                    </div>
                 </div>
-                <div class="slide">
-                    <img src="images/demmove-bg3.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="images/demmove-bg3.jpg" alt="">
-                </div>
-
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
+                
+                
+                <div class ="texte">
+                    <p>attestataire de capacité</p>
+                    <p>commissionnaire de transports</p>
+                    <p>transitaire</p>
                 </div>
             </div>
 
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-            </div>
+            <div class="carrousel-images">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                
+                        <div class="slide first">
+                            <img src="images/demmove-bg3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/demmove-bg3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/demmove-bg3.jpg" alt="">
+                        </div>
 
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                        </div>
+                    </div>
+
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+            <p>Entreprise de déménagement DEM&MOVE</p>
         </div>
-        </div>
+
     
         <script type="text/javascript">
         var counter = 1;
@@ -82,7 +102,6 @@
         }, 5000);
         </script>
 
-        <p>Entreprise de déménagement DEM&MOVE</p>
 
         <div class="centre">
             <div class="sidebar">
@@ -98,7 +117,7 @@
                 <p> 35 Rue paul Claudel</p>
                 <p> 91000 Evry</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.5647251437326!2d2.4293510158698544!3d48.637310924201145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5de23e97b86d9%3A0xbc55928b05ea68b2!2s36%20Rue%20Paul%20Claudel%2C%2091000%20%C3%89vry-Courcouronnes!5e0!3m2!1sfr!2sfr!4v1670602917590!5m2!1sfr!2sfr" 
-                width="250" height="250" style="border: 3px;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                style="border: 3px;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 
                 <p>Du lundi au vendredi de 8h30 a 12h00 et <br> de 14h00 a 17h30:</p>
                 <br>
@@ -130,7 +149,7 @@
                 </div>
 
                 <section>
-                    <h4> Démenagement International et Nationaux </h4>
+                    <h1> Démenagement International et Nationaux </h1>
                     <p>
                         Notre entreprise de Démenagment met a votre disposition des prestations globales et complémentaires afin de programmer des 
                         <a href="#">déménagement nationaux</a> des <a href="#">déménagement internationaux</a> de grandes distances nécessitant plusieurs modes de transport.
@@ -145,17 +164,16 @@
                 </div>
 
                 <section>
-                    <h4> Déménagement International</h4>
+                    <h2> Déménagement International</h2>
                     <p>
                         Vous êtes sur le point de vous expatrier, ou d’effectuer une mission à l’étranger : nos équipes sont donc en capacité, 
                         d’une part de prendre en charge vos affaires en les stockant dans des garde-meubles sécurisés, et d’autre part, de programmer leur transit.
                     </p>
-                    <br>
                     <p>
                         Nous nous rendons sur les lieux du déménagement afin de faire un état des lieux et de mesurer le volume des affaires à transporter.
                     </p>
                     <span> Sous 48 heures, le client recoit un <a href="#">devis de déménagement</a> personalisé en fonction de ses attentes et de son budget</span>
-                     <h4> Déménagment national </h4>
+                     <h2> Déménagment national </h2>
                      <p>Avec plus d’une vingtaine d’années d’expérience à notre actif, nous avons su développer une expertise, 
                         à partir de notre zone d’intervention de prédilection sur Paris et L’Ile-de-France puisque nous sommes basés à Lisses.
                         Nous prenons également en compte l’aspect environnemental en optimisant la logistique afin de favoriser le respect de l’environnement, 
@@ -178,13 +196,16 @@
         <div class="footer">
             <h2>DEM&MOVE</h2>
             <a href="#">Entreprise</a>
+            <br>
             <a href="#">Services</a>
+            <br>
             <a href="#">Déménagement MAroc</a>
         </div>
 
         <div class="footer">
             <h2>Informations</h2>
             <a href="#">Devis</a>
+            <br>
             <a href="#">Contact</a>
         </div>
         <div class="footer">
@@ -192,15 +213,20 @@
             <span>DEM&MOVE</span>
             <p> 36 rue Paul Claudel</p>
             <p> 91000 Evry</p>
-            <i class='bx bxs-map'><a href="#">Localisation</a></i>
+            <br>
+            <i class='bx bxs-map'><a href="#"> Localisation</a></i>
         </div>
         <div class="footer">
             <h2>Nous contacter</h2>
             <span>Horaires d'ouverture</span>
             <p>Du lundi au vendredi de 8h30 a 12h00 et <br> de 14h00 a 17h30:</p>
+            <br>
             <i class='bx bxs-phone'> 01 60 86 22 13 / 07 48 35 46 </i>
         </div>
-        
-    </footer>
-
+    </footer> 
+    <br>
+    <div class="text-footer">
+        <p> ©2014 DEMANDMOV | BHIinternet - Création site internet entreprise | 2014</p>
+    </div>
 </html>
+
