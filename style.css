@@ -2,33 +2,40 @@
 /*---------------------------------------------- GENERAL -------------------------------------------------*/
 html{
   background-color: #CBDAC7;
+  height: fit-content;
+  width: fit-content;
 }
 
 h1 
 {
-  font-size: 50px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.2vw;
+  font-family: system-ui;
 }
 
 h2
 {
-  font-size: 40px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.1vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h3
 {
-  font-size: 30px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body
  {
   background-color: #E7EEE6;
-  width: 80%;
-  min-width: 1400px;
+  width: 85%;
+  min-width: 800px;
   margin-left: auto;
   margin-right: auto;
+ }
+
+ p
+ {
+  font-family: system-ui;
  }
 
  a
@@ -42,21 +49,31 @@ body
    font-style: italic;
 }
 
+@media screen and (max-width: 1200px){
 
+  h1 
+  {
+    font-size: 24px;
+  }
+  h2 
+  {
+    font-size: 25px;
+  }
+}
 
 /*---------------------------------------------- HEADER -------------------------------------------------*/
 header
 {
-  min-width: 1200px;
+  min-width: 800px;
+  background-color: #E7EEE6;
 }
 
 .en-tete
 {
   display: grid;
-  background-color: #F5F8F4;
-  grid-template-columns: 20% 20% 24% 16% 16%;
+  grid-template-columns: 20% repeat(5,1fr);
   grid-column-gap: 1%;
-  height: 300px;
+  padding-top: 2%;
 }
 
 .en-tete img
@@ -64,9 +81,8 @@ header
 
   grid-column-start: 1;
   width: 90%;
-  height: 60%;
   margin: auto;
-  min-width: 260px;
+  min-width: 50%;
 }
 
 .titre
@@ -74,14 +90,14 @@ header
   grid-column-start: 2;
   margin-top: auto;
   margin-bottom: auto;
-  min-width: 290px;
+  min-width: 200px;
 }
 
 .titre h1
 {
   margin: 0%;
   color: green;
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   font-weight: 900;
 }
 
@@ -95,16 +111,16 @@ header
 .titre h3
 {
   margin: 0%;
-  font-size: 0.9vw;
+  font-size: 0.75vw;
   font-weight: bold;
 }
 
  #LienDevis
  {
-  grid-column-start: 4;
-  width: 90%;
+  grid-column-start: 5;
+  width: 95%;
   min-width: 80%;
-  height: 35%;
+  height: 40%;
   min-width: 180px;
   margin-left: auto;
   margin-top: auto;
@@ -112,55 +128,58 @@ header
   background-color: turquoise;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.1vw;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid black;
+  font-size: 1.2vw;
   font-weight: 900;
   cursor: pointer;
  }
 
  #Numero
  {
-  grid-column-start: 5;
-  width: 90%;
-  height: 35%;
+  grid-column-start: 6;
+  width: 95%;
+  height: 40%;
   min-width: 180px;
   margin-top: auto;
   margin-bottom: auto;
   background-color: green;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.1vw;
+  border-radius: 4px;
+  border: 1px solid black;
+  font-size: 1.2vw;
   font-weight: 900;
   cursor: pointer;
  }
 
- @media screen and (max-width: 2300px){
+ @media screen and (max-width: 1200px){
   
 
   .titre h1
   {
-    font-size: 38px;
+    font-size: 16px;
   }
 
   .titre h2
   {
-    font-size: 25px;
+    font-size: 12px;
   }
   
   .titre h3
   {
-    font-size: 20px;
+    font-size: 8px;
   }
 
   #LienDevis
   {
-    font-size:  22px;
+    font-size:  12px;
   }
 
   #Numero
   {
-    font-size:  22px;
+    font-size:  12px;
   }
 
 
@@ -177,20 +196,17 @@ header
 
  .Menu-et-Slider p
  {
-  font-size: 25px;
   font-weight: bolder;
+  color: grey;
  }
 
 
 .Menu{
-  background-color: aliceblue;
-  height: 130px;
+  background-color: white;
   width: 100%;
   border: 1px solid lightgrey;
   display: grid;
   grid-template-columns: 65% 35%;
-
-  
 }
 
 .menu
@@ -201,7 +217,7 @@ header
 
 .menu a
 {
-  font-size: 0.85vw;
+  font-size: 0.80vw;
   font-weight: 900;
 }
 
@@ -213,14 +229,13 @@ header
 .active
 {
   background-color: green;
-  border: 1px solid lightgrey;
   padding-left: 3%;
   padding-right: 3%;
 }
 
 .active a
 {
-  color: black;
+  color: white;
 }
 
 .lien-menu 
@@ -235,6 +250,8 @@ header
   text-align: end;
   margin-bottom: auto;
   margin-top: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .texte p
@@ -243,19 +260,23 @@ header
   text-transform: uppercase;
   margin-right: 5%;
   font-weight: 900;
-  font-size: 0.9vw;
+  font-size: 0.65vw;
+  color: rgba(0, 0, 0, 0.616);
 }
 
-@media screen and (max-width: 1800px){
+@media screen and (max-width: 1450px){
 
   .texte p
   {
-    font-size: 16px;
+    font-size: 9px;
   }
+}
+
+@media screen and (max-width: 1350px){
 
   .menu a
  {
-  font-size: 16px;
+  font-size: 10px;
  }
 
 }
@@ -310,7 +331,7 @@ header
   margin-top: -50px;
   display: flex;
   justify-content: center;
-  min-width: 1200px;
+  min-width: 800px;
 }
 
 .manual-btn{
@@ -348,7 +369,7 @@ display: flex;
 justify-content: center;
 width: 80%;
 margin-bottom: 36px;
-min-width: 1200px;
+min-width: 800px;
 max-height: 800px;
 }
 
@@ -387,10 +408,10 @@ max-height: 800px;
   margin-right: auto;
   grid-template-columns: 26% 68%;
   grid-template-rows: auto;
-  min-width: 1200px;
-  grid-column-gap: 6%;
+  min-width: 35%;
+  grid-column-gap: 5%;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 5%;
   height: fit-content;
 }
 
@@ -404,23 +425,24 @@ max-height: 800px;
   height: fit-content;
   width: 100%;
   background-color: #E7EEE6;
-  min-width: 80%;
+  min-width: 60%;
 }
 
 .sidebar p
 {
-  font-size: 30px;
+  font-size: 1.2vw;
 }
 
 .sidebar i
 {
-  font-size: 30px;
+  font-size: 1.1vw;
 }
 
 .sidebar iframe
 {
-  height: 450px;
+  height: 20vw;
   width: 100%;
+  min-height: 200px;
 }
 
 .redirection
@@ -430,21 +452,31 @@ max-height: 800px;
    
 }
  
-.redirection a{
+.redirection a
+{
    
   display: block;
   border-bottom: 1px solid lightgrey;
-  font-size: 35px;
+  font-size: 1.5vw;
   padding: 5%;
    
  }
 
- @media screen and (max-width: 1950px){
+ @media screen and (max-width: 1150px){
 
-  .sidebar iframe
+  .sidebar p
   {
-    height: 300px;
+    font-size: 13px;
   }
+  .redirection a
+  {
+    font-size: 16px;
+  }
+  .sidebar i
+ {
+    font-size: 12px;
+ }
+
  }
 
  /*---------------------------------------------- PRINCIPALE -------------------------------------------------*/
@@ -459,11 +491,11 @@ max-height: 800px;
 
  .main p
  {
-  font-size: 32px;
+  font-size: 1.4vw;
  }
 
  .main span{
-  font-size: 34px;
+  font-size: 1.5vw;
  }
 
  .section
@@ -471,8 +503,7 @@ max-height: 800px;
   display: grid;
   grid-template-columns: repeat(3, 1fr) ;
   grid-column-gap: 4%;
-  min-width: 70%;
-  margin-bottom: 80px;
+  margin-bottom: 8%;
  }
 
  .article
@@ -481,27 +512,25 @@ max-height: 800px;
    background-color: #E7EEE6;
    width: auto;
    height: fit-content;
-   padding-top: 40px;
-   padding-bottom: 12%;
+   padding-top: 2%;
+   padding-bottom: 4%;
    text-align: center;
-   min-height: 250px;
+   min-height: 220px;
  }
 
  .article span{
    text-transform: uppercase;
    font-weight: bold;
-   font-size: 1.4vw;
+   font-size: 1.3vw;
  }
 
  .article p{
-  font-size: 0.90vw;
+  font-size: 1.2vw;
  }
-
 
  .article i
  {
    font-size: 50px;
-   margin-bottom: 20px;
  }
 
 
@@ -523,20 +552,29 @@ max-height: 800px;
   margin-right: auto;
 }
 
-@media screen and (max-width: 1950px){
+@media screen and (max-width: 1150px){
 
   
- .article span
+ .main span
  {
-  font-size: 30px;
+  font-size: 18px;
  }
 }
 
-@media screen and (max-width: 2350px){
+@media screen and (max-width: 1350px){
 
-  .article p
+  .main p
  {
-  font-size: 23px;
+  font-size: 15px;
+ }
+
+ .article span
+ {
+  font-size: 14px;
+ }
+ .article i
+ {
+   font-size: 45px;
  }
 
 }
@@ -547,7 +585,7 @@ max-height: 800px;
   background-color: #9FEBE0;
   display: inline-block;
   width: 100%;
-  min-width: 1200px;
+  min-width: 800px;
   height: fit-content;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -558,7 +596,7 @@ max-height: 800px;
 {
    padding-top: 20px;
    text-align: center;
-   font-size: 30px;
+   font-size: 1.1vw;
 }
 
 .button {
@@ -567,50 +605,64 @@ max-height: 800px;
   color: white;
   margin-left: auto;
   margin-right: auto;
-  font-size: 30px;
+  font-size: 1.8vw;
   font-weight: 800;
   padding: 10px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 4px;
+  border: 2px solid cadetblue;
 }
+
+@media screen and (max-width: 1350px){
+  .foot p
+  {
+    font-size: 15px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+
+}
+
 
 /*---------------------------------------------- PIED DE PAGE -------------------------------------------------*/
 
 footer
 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4,1fr);
   padding-left: 20px;
-  min-width: 1100px;
+  min-width: 700px;
   background-color: white;
   border-bottom: 5px solid black;
 }
 footer h2
 {
-  font-size: 35px;
+  font-size: 1.9vw;
 }
 
 
 footer span
 {
    font-weight: bold;
-   font-size: 30px;
+   font-size: 1.7vw;
    font-style: normal;
 }
 .footer a
 {
-  font-size: 28px;
+  font-size: 1.6vw;
 }
 
 .footer p
 {
-  font-size: 25px;
+  font-size: 1.3vw;
   margin: 0%;
 }
 
 .footer i
 {
-  font-size: 25px;
+  font-size: 1.3vw;
 }
 
 .text-footer
@@ -618,5 +670,37 @@ footer span
   grid-column: 1 / 5;
   margin-top: 10%;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.6vw;
+}
+
+@media screen and (max-width: 1250px){
+
+  footer h2
+{
+  font-size: 20px;
+}
+footer span
+{
+   font-size: 16px;
+}
+.footer a
+{
+  font-size: 15px;
+}
+
+.footer p
+{
+  font-size: 11px;
+}
+
+.footer i
+{
+  font-size: 15px;
+}
+
+.text-footer
+{
+  font-size: 15px;
+}
+
 }
